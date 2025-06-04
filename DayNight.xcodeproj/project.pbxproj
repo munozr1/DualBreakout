@@ -6,8 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		940CA7732DEFDF8000C1E93C /* SDL3.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940CA7722DEFDF8000C1E93C /* SDL3.xcframework */; };
+		940CA7742DEFDF8000C1E93C /* SDL3.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 940CA7722DEFDF8000C1E93C /* SDL3.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		940CA7752DEFDF8000C1E93C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				940CA7742DEFDF8000C1E93C /* SDL3.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9404943B2DEFDCDA00B15AC8 /* DayNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		940CA7722DEFDF8000C1E93C /* SDL3.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDL3.xcframework; path = ../../../../Library/Frameworks/SDL3.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940CA7732DEFDF8000C1E93C /* SDL3.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				9404943D2DEFDCDA00B15AC8 /* DayNight */,
+				940494512DEFDD9200B15AC8 /* Frameworks */,
 				9404943C2DEFDCDA00B15AC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +67,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		940494512DEFDD9200B15AC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940CA7722DEFDF8000C1E93C /* SDL3.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -55,6 +85,7 @@
 				940494372DEFDCDA00B15AC8 /* Sources */,
 				940494382DEFDCDA00B15AC8 /* Frameworks */,
 				940494392DEFDCDA00B15AC8 /* Resources */,
+				940CA7752DEFDF8000C1E93C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
