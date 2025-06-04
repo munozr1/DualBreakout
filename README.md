@@ -1,4 +1,4 @@
-1. **Clone your project:**
+1. **Clone project:**
 
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
